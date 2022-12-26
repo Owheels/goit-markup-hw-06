@@ -580,6 +580,7 @@ footer {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.06em;
   fill: currentColor;
   background: var(--color-brand);
   border: 0;
@@ -630,6 +631,7 @@ footer {
 }
 
 .form-field-label {
+  display: block;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
@@ -686,7 +688,6 @@ footer {
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
-  cursor: pointer;
 }
 
 .checkbox-input {
@@ -695,7 +696,7 @@ footer {
 
 .checkbox-icon {
   position: absolute;
-  margin: 4px 7px 0 0;
+  margin: 4px 7px 0 12px;
   border: 2px solid var(--text-color-primary);
   border-radius: 2px;
   fill: transparent;
@@ -709,7 +710,14 @@ footer {
 
 .checkbox-label {
   position: relative;
+  left: 12px;
   padding-left: 23px;
+  color: var(--text-color-secondary);
+}
+
+.test {
+  position: absolute;
+  left: 52px;
 }
 
 .agreement-link {
@@ -719,6 +727,7 @@ footer {
 .form-submit {
   display: block;
   margin: 0 auto;
+  width: 200px;
 }
 
 .form-field-input:focus,
@@ -730,13 +739,13 @@ footer {
   fill: var(--color-brand);
 }
 
-.is-hidden {
+/* .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   transform: scale(0.75);
   transition-duration: 500ms;
-}
+} */
 
 .modal-close {
   position: absolute;
